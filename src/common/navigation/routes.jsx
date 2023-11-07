@@ -4,6 +4,7 @@ import Item from "../../pages/Item/item.jsx";
 import Student from "../../pages/student/student.jsx";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
+import Axios from "../../pages/axios/Axios.jsx";
 
 const routes = [
     {
@@ -32,6 +33,13 @@ const routes = [
         key: "student",
         component: <Student/>,
         path:"/student",
+        icon:<MailIcon/>
+    },
+    {
+        name:"Axios",
+        key: "axios",
+        component: <Axios/>,
+        path:"/axios",
         icon:<MailIcon/>
     }
 ];
